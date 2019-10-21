@@ -1,0 +1,239 @@
+*
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #203562;
+}
+.logo{
+    background: url(logo.jpg);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-indent: -9999px;
+    clip-path: circle(50% at 50% 50%);
+}
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.topnav a{
+    padding: 15px 25px;
+    text-decoration:none;
+    color:#203562;
+    font-size: 4vh;
+}
+.topnav a:hover{
+    background: rgb(65, 97, 166);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.topnav .icon{
+    display: none;
+}
+.heading{
+    background:url("web.jpg") ;
+    background-size: cover;
+    text-align: center;
+    height: 25rem;
+    background-position: center;
+    position: relative;
+    box-shadow: 5px 5px 5px #203562;
+}
+.head-text{
+    text-align: center;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%); 
+    color:#203562;
+    font-family:'Shrikhand', cursive;
+}
+#btn{
+   background-color:rgb(238, 238, 237);
+   border:none;
+   border-radius: 6px;
+   box-shadow: 5px 5px 5px #203562;
+   font-size: 1.5rem;
+   padding: .7rem;
+   margin-top: .5rem;
+   color:#203562;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* style section 1 */
+.container-1{
+    margin: 3rem 2rem;
+    align-content: center;
+}
+.title{
+    border-right: 1px double #203562;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+.title h2{
+    font-size: 3rem;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+.items{
+    background-position: center;
+    background-size: cover;
+    clip-path: circle(50% at 50% 50%);
+    transition: all 1s ease;
+    height: 6rem;
+    width: 6rem;
+}
+.items:hover{
+    transform: scale(1.1);
+}
+.items1{
+    background-image: url("apple.jpg");
+}
+.items3{
+    background-image: url("app.jpeg");
+}
+.items5{
+    background-image: url("cms.jpeg");
+}
+.items-text{
+    padding-left: 1rem;
+}
+/* style section 2 */
+.container-2{
+    margin-top: 3vh;
+}
+.card-icon a{
+    color: #203562;
+}
+.card-icon a:hover{
+    color: #6f85b3;
+}
+/* style section 3*/
+input[type=text],input[type=email],textarea{
+    width: 100%;
+    padding: 6px 20px;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+input[type=submit]{
+    display: inline-block;
+    padding: 6px 20px;
+    background-color: #203562;
+    margin: 6px 0;
+    border:none;
+    border-radius: 4px;
+    color: white;
+}
+input[type=submit]:hover{
+    background-color: #7f99d3;
+}
+.container-3{
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+/* style section 4 */
+.container-4{
+    padding: 4rem;
+    background: url("back.jpg");
+    color: white;
+}
+.container-4 a{
+    display:block;
+    text-decoration: none;
+    padding: 8px 3px;
+    color: white;
+}
+.container-4 a:hover{
+  background-color: white;
+  color: #162649;
+  border-radius: 4px;
+}
+/* When the screen is less than 600 pixels wide,  */
+@media only screen and (max-width:600px){
+    .topnav a:not(:first-child) {
+        display: none;}
+    .topnav a.icon{
+        float:right;
+        display: block;
+    }
+    .topnav.responsive{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .topnav.responsive .icon{
+       position: absolute;
+       right:0;
+       top:0;
+    }
+    .topnav.responsive a{
+        float:none;
+        display: block;
+        padding:1vw;
+        text-align: center;
+    }
+    .heading{
+        height: 15rem;
+    }
+    #btn{
+        font-size: 1rem;
+        padding: .5rem;
+        margin-top: 0;
+     }
+     .container.container-1{
+        margin: 0;
+        padding: 0;
+    }
+    .title{
+        border-bottom: 1px solid #203562;
+        border-right:none;
+        text-align: center; 
+    }
+    .title h2{font-size: 2.5rem;}
+    .items-text{
+        padding-left:2vw;
+    }
+    .items1{
+        border:none;
+    }
+    .container-4{
+        padding: 1rem;
+        background: url(res.jpg);
+    }
+    
+}
+/* When the screen is more than 600 pixels and less than 768 pixels wide */
+@media only screen and (max-width:768px){
+    .container-1{
+        margin: 1.5rem;
+    }
+    .title{
+        border-bottom: 1px solid #203562;
+        border-right:none;
+        text-align: center; 
+    }
+    .items{
+        height: 3rem;
+        width: 6rem;
+    }
+    .items1{
+        border:none;
+    }
+    .container-4{
+        padding: 1rem;
+    }
+
+}
